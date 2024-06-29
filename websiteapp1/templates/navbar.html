@@ -1,0 +1,128 @@
+<!-- Navigation -->
+<style>
+
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300
+}
+
+.height {
+    height: 100vh
+}
+</style>
+{% load static %}
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <!-- Image Logo -->
+            <!--<a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/logo.png' %}" alt="alternative"></a>
+                -->
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text" href="index.html">India Pedia</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">ENCYCLOPEDIA CATEGORIES</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="countries">Countries</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="science">Science</a></li>
+
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="technology">Technology</a></li>
+                        </ul>
+                    </li>
+                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Famous</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="person">Person</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="sports">Sports</a></li>
+
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="songdancemusic">Songs,Dance,Music</a></li>
+                            <li><a class="dropdown-item" href="art">Art</a></li>
+                            <li><a class="dropdown-item" href="places">Places</a></li>
+                            <li><a class="dropdown-item" href="festivals">festivals</a></li>
+                            <li><a class="dropdown-item" href="parties">Political Parties</a></li>
+                            <li><a class="dropdown-item" href="culture">culture</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment">Entertainment & Pop Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="geography">Geography & Travel</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Features</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="biographies">Biographies</a></li>
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="onthisday">On This Day</a></li>
+
+                            <li><div class="dropdown-divider"></div></li>
+                            <li><a class="dropdown-item" href="spotlight">Spotlight</a></li>
+                            <li><a class="dropdown-item" href="companionst">Companionst</a></li>
+
+                            <li><a class="dropdown-item" href="imggal">Image Galleries</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Joinus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Login</a>
+                    </li>
+
+                </ul>
+                <span class="nav-item social-icons">
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+  <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                <form action="searchpedia">
+                <input type="text" name='searchstr' class="form-control" style="border:10px solid white;padding: 11px 19px;font-size: 17.5px;" placeholder="          Have a question? Ask Now">
+                <input type="submit"  class="btn btn-primary float-end" style="border:2px solid white;margin-top:10px" value="Search"/>
+
+                </form>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="h1-large">{{data}}</h1>
+                    <div class="search">
+
+                </div>
+                </div> <!-- end of col -->
+                <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of header -->
+    <!-- end of header -->

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Basic -->
+
+{% for rst in objectdata %}
+<center><h1>{{data}}</h1> </center>
+
+    <div class="ex-basic-1 pt-3 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+
+                    <h2 class="mb-4" style="color:white">Country :{{rst.ObjectCat}}</h2>
+                    <img class="img-fluid mb-5" src="{{rst.Objectimage.url}}" alt="alternative">
+                    <div class="text-box mb-5" style="color:white">
+                        <h3>About {{data}}</h3>
+                        <p>
+                            {{rst.Objectdesc}}
+                        </p>
+                    </div> <!-- end of text-box -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+{% endfor %}
+{% endblock %}
